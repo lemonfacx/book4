@@ -39,8 +39,8 @@
       margin: 0 10px;
     }
     .ar-link {
-      position: absolute;
-      bottom: 16px;
+      position: fixed;
+      bottom: calc(16px + env(safe-area-inset-bottom));
       right: 16px;
       padding: 10px 16px;
       background: rgba(0, 0, 0, 0.7);
@@ -48,6 +48,7 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      z-index: 999;
     }
   </style>
 </head>
